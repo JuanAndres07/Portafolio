@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles, Code2, Rss, Layers } from "lucide-react";
+import { IconArrowRight, IconSparkles, IconCode, IconRss, IconStack } from "@tabler/icons-react";
 import { HighlightCard } from "@/components/highlight-card";
 import { CtaLink } from "@/components/cta-link";
 
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-6 flex flex-col items-center text-center space-y-12">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-semibold uppercase tracking-wider animate-fade-in">
-          <Sparkles className="w-3.5 h-3.5" />
+          <IconSparkles className="w-3.5 h-3.5" />
           Fase 1 Completada
         </div>
 
@@ -42,7 +42,7 @@ export default function Home() {
           <CtaLink
             href="/projects"
             variant="primary"
-            icon={<ArrowRight className="w-4 h-4" />}
+            icon={<IconArrowRight className="w-4 h-4" />}
             iconPosition="end"
           >
             Ver Proyectos
@@ -55,21 +55,21 @@ export default function Home() {
         {/* Grid of highlights */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
           <HighlightCard
-            icon={<Code2 className="w-5 h-5" />}
+            icon={<IconCode className="w-5 h-5" />}
             title="Tailwind CSS v4"
             description="Estilos ultrarrápidos y modulares definidos mediante variables CSS nativas y sintaxis simplificada @theme."
             color="primary"
           />
 
           <HighlightCard
-            icon={<Layers className="w-5 h-5" />}
+            icon={<IconStack className="w-5 h-5" />}
             title="Diseño Adaptativo"
             description="Esquema de colores premium con modo claro/oscuro automatizado y menú móvil responsivo e interactivo."
             color="secondary"
           />
 
           <HighlightCard
-            icon={<Rss className="w-5 h-5" />}
+            icon={<IconRss className="w-5 h-5" />}
             title="Motor MDX del Blog"
             description="Preparado para la Fase 3, donde implementaremos rutas dinámicas y lectura de archivos de blog estáticos."
             color="primary"

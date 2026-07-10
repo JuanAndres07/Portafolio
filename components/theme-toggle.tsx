@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react";
+import { IconSun, IconMoon } from "@tabler/icons-react";
 
 export function ThemeToggle() {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -29,9 +29,9 @@ export function ThemeToggle() {
     >
       <div className="relative w-5 h-5 flex items-center justify-center overflow-hidden">
         {isDark ? (
-          <Sun className="w-5 h-5 transition-all duration-500 rotate-0 scale-100 group-hover:rotate-45" />
+          <IconSun className="w-5 h-5 transition-all duration-500 rotate-0 scale-100 group-hover:rotate-45" />
         ) : (
-          <Moon className="w-5 h-5 transition-all duration-500 rotate-0 scale-100 group-hover:-rotate-12" />
+          <IconMoon className="w-5 h-5 transition-all duration-500 rotate-0 scale-100 group-hover:-rotate-12" />
         )}
       </div>
     </button>

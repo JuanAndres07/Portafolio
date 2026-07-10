@@ -30,7 +30,7 @@ Construir un portafolio web moderno, rápido y escalable utilizando Next.js (App
 - [x] Inicializar proyecto base (`npx create-next-app@latest`).
 - [x] Configurar TypeScript y Tailwind CSS v4 (sintaxis `@import "tailwindcss"`, `@theme`).
 - [x] Instalar `next-themes` e implementar Modo Oscuro global sin parpadeo.
-- [ ] Construir los componentes UI reutilizables (Botones, Tarjetas, Inputs).
+- [x] Construir los componentes UI reutilizables (Botones, Tarjetas, Inputs).
 - [x] Diseñar e implementar el `Navbar` y `Footer` en el layout principal.
 
 ### Fase 2: Enrutamiento y Contenido Estático

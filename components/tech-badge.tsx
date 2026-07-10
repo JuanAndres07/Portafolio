@@ -33,7 +33,7 @@ const getBadgeStyle = (name: string) => {
 
   // JavaScript, JS -> amber/yellow
   if (lower.includes("javascript") || lower === "js") {
-    return "bg-amber-50/70 dark:bg-amber-950/20 text-amber-600 dark:text-amber-450 border-amber-200/50 dark:border-amber-850/30 hover:bg-amber-100/50 dark:hover:bg-amber-900/20";
+    return "bg-amber-50/70 dark:bg-amber-950/20 text-amber-600 dark:text-amber-400 border-amber-200/50 dark:border-amber-800/30 hover:bg-amber-100/50 dark:hover:bg-amber-900/20";
   }
 
   // Node, Express, Fastify -> emerald/green
@@ -56,7 +56,7 @@ const getBadgeStyle = (name: string) => {
     lower.includes("mail") ||
     lower.includes("email")
   ) {
-    return "bg-rose-50 dark:bg-rose-950/25 text-rose-600 dark:text-rose-455 border-rose-200/50 dark:border-rose-800/30 hover:bg-rose-100/50 dark:hover:bg-rose-900/20";
+    return "bg-rose-50 dark:bg-rose-950/25 text-rose-600 dark:text-rose-400 border-rose-200/50 dark:border-rose-800/30 hover:bg-rose-100/50 dark:hover:bg-rose-900/20";
   }
 
   // MDX, Markdown -> violet
@@ -77,11 +77,11 @@ const getBadgeStyle = (name: string) => {
     lower.includes("db") ||
     lower.includes("database")
   ) {
-    return "bg-red-50 dark:bg-red-950/25 text-red-650 dark:text-red-400 border-red-200/50 dark:border-red-800/30 hover:bg-red-100/50 dark:hover:bg-red-900/20";
+    return "bg-red-50 dark:bg-red-950/25 text-red-600 dark:text-red-400 border-red-200/50 dark:border-red-800/30 hover:bg-red-100/50 dark:hover:bg-red-900/20";
   }
 
   // Default / fallback style
-  return "bg-slate-100 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 border-slate-200/40 dark:border-slate-750/30 hover:bg-slate-200/50 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-white";
+  return "bg-slate-100 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 border-slate-200/40 dark:border-slate-700/30 hover:bg-slate-200/50 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-white";
 };
 
 export function TechBadge({ name, className = "" }: TechBadgeProps) {

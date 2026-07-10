@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
+import { IconArrowRight, IconCalendar } from "@tabler/icons-react";
 import { TechBadge } from "@/components/tech-badge";
 
 interface BlogCardProps {
@@ -30,7 +30,7 @@ export function BlogCard({
     >
       {/* Date Header */}
       <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-400 dark:text-slate-500 mb-3 select-none">
-        <Calendar className="w-3.5 h-3.5" />
+        <IconCalendar className="w-3.5 h-3.5" />
         <time dateTime={date}>{date}</time>
       </div>
 
@@ -58,7 +58,7 @@ export function BlogCard({
         {/* Action Link (Micro-animation on Arrow) */}
         <div className="flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary dark:group-hover:text-primary transition-colors duration-200 select-none">
           <span>Leer artículo</span>
-          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+          <IconArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </div>
       </div>
     </Link>

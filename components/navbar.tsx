@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import { ThemeToggle } from "./theme-toggle";
 
 const navLinks = [
@@ -61,7 +61,7 @@ export function Navbar() {
             aria-label="Alternar menú de navegación"
             className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors cursor-pointer"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <IconX className="w-6 h-6" /> : <IconMenu2 className="w-6 h-6" />}
           </button>
         </div>
       </div>
