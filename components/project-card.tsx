@@ -2,26 +2,18 @@ import React from "react";
 import Image from "next/image";
 import { IconExternalLink, IconBrandGithub } from "@tabler/icons-react";
 import { TechBadge } from "@/components/tech-badge";
+import { Project } from "@/types/project";
 
 interface ProjectCardProps {
-  title: string;
-  description: string;
-  tags: string[];
-  href?: string;
-  github?: string;
-  image?: string;
+  project: Project;
   className?: string;
 }
 
 export function ProjectCard({
-  title,
-  description,
-  tags,
-  href,
-  github,
-  image,
+  project,
   className = "",
 }: ProjectCardProps) {
+  const { title, description, tags, demo, github, image } = project;
   return (
     <div
       className={`glass-effect flex flex-col rounded-2xl overflow-hidden border border-slate-200/50 dark:border-slate-800/50 
@@ -67,7 +59,7 @@ export function ProjectCard({
         )}
 
         {/* Actions/Links Footer */}
-        {(github || href) && (
+        {(github || demo) && (
           <div className="flex items-center gap-4 pt-4 border-t border-slate-200/40 dark:border-slate-800/40 mt-auto">
             {github && (
               <a
@@ -81,9 +73,9 @@ export function ProjectCard({
                 Código
               </a>
             )}
-            {href && (
+            {demo && (
               <a
-                href={href}
+                href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Ver sitio en vivo de ${title}`}
