@@ -25,7 +25,7 @@ export default function AboutPage() {
         {/* Left Column: Visual Monogram Avatar */}
         <div className="md:col-span-5 flex justify-center">
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden glass-effect border border-slate-200/50 dark:border-slate-800/50 shadow-2xl flex items-center justify-center group transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10 group-hover:scale-110 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-linear-to-tr from-primary/10 via-transparent to-secondary/10 group-hover:scale-110 transition-transform duration-500" />
             <div className="absolute w-44 h-44 rounded-full bg-linear-to-r from-primary to-secondary blur-3xl opacity-20 dark:opacity-10 animate-pulse" />
             <span className="text-6xl sm:text-7xl font-extrabold tracking-tighter bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent select-none group-hover:scale-105 transition-transform duration-300">
               JA
@@ -39,15 +39,18 @@ export default function AboutPage() {
             Desarrollador Web Frontend & Ingeniero de Software
           </h2>
           <p>
-            ¡Hola! Soy Juan Andrés, un apasionado por la tecnología con sede en el desarrollo frontend
-            y la ingeniería de sistemas. Mi misión principal es diseñar y construir experiencias web
-            excepcionales que unan una estética impecable con un rendimiento óptimo.
+            ¡Hola! Soy Juan Andrés, un apasionado por la tecnología con sede en
+            el desarrollo frontend y la ingeniería de sistemas. Mi misión
+            principal es diseñar y construir experiencias web excepcionales que
+            unan una estética impecable con un rendimiento óptimo.
           </p>
           <p>
-            Me especializo en ecosistemas modernos basados en <strong>React</strong> y <strong>Next.js</strong>.
-            Disfruto resolver problemas complejos a través de arquitecturas de software limpias y mantenibles.
-            Creo firmemente que los mejores productos digitales son aquellos que ponen la accesibilidad,
-            el diseño adaptativo y la experiencia del desarrollador en primer plano.
+            Me especializo en ecosistemas modernos basados en{" "}
+            <strong>React</strong> y <strong>Next.js</strong>. Disfruto resolver
+            problemas complejos a través de arquitecturas de software limpias y
+            mantenibles. Creo firmemente que los mejores productos digitales son
+            aquellos que ponen la accesibilidad, el diseño adaptativo y la
+            experiencia del desarrollador en primer plano.
           </p>
         </div>
       </section>
@@ -66,8 +69,9 @@ export default function AboutPage() {
               Rendimiento y Velocidad
             </h4>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-              Código optimizado, optimización de assets e implementación de caches inteligentes para lograr
-              tiempos de carga instantáneos y la mejor puntuación de Web Vitals.
+              Código optimizado, optimización de assets e implementación de
+              caches inteligentes para lograr tiempos de carga instantáneos y la
+              mejor puntuación de Web Vitals.
             </p>
           </div>
 
@@ -79,8 +83,9 @@ export default function AboutPage() {
               Accesibilidad Primero
             </h4>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-              Cumplimiento de estándares de accesibilidad WCAG y maquetación semántica. El software debe
-              ser usable por todas las personas, sin importar sus capacidades.
+              Cumplimiento de estándares de accesibilidad WCAG y maquetación
+              semántica. El software debe ser usable por todas las personas, sin
+              importar sus capacidades.
             </p>
           </div>
 
@@ -92,8 +97,9 @@ export default function AboutPage() {
               Arquitecturas Modulares
             </h4>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-              Estructura de archivos ordenada, tipado estricto con TypeScript, componentes desacoplados
-              y mantenibles listos para el crecimiento del negocio.
+              Estructura de archivos ordenada, tipado estricto con TypeScript,
+              componentes desacoplados y mantenibles listos para el crecimiento
+              del negocio.
             </p>
           </div>
         </div>
@@ -132,7 +138,7 @@ export default function AboutPage() {
           {timeline.map((item) => (
             <div key={item.id} className="relative pl-8 group">
               {/* Timeline node dot */}
-              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-4 border-white dark:border-neutral bg-slate-350 dark:bg-slate-700 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+              <div className="absolute -left-2.25 top-1.5 w-4 h-4 rounded-full border-4 border-white dark:border-neutral bg-slate-350 dark:bg-slate-700 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                 <span className="absolute inset-0 rounded-full bg-primary/30 animate-ping group-hover:inline-block hidden" />
               </div>
 

@@ -11,6 +11,7 @@ export const projects: Project[] = [
     github: "https://github.com/JuanAndres07/devflow",
     demo: "https://devflow-demo.vercel.app",
     featured: true,
+    image: "/projects/devflow.png",
     screenshots: [],
   },
   {
